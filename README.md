@@ -38,12 +38,16 @@ yarn install
 3. Install Pods for iOS:
    
 cd ios
+
 pod install
+
 cd ..
 
-4.Run the App
+
+4. Run the App
 
 npm run android
+
 npm run ios
 
 
