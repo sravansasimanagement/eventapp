@@ -22,6 +22,7 @@ import BadgeScreen from '../screens/BadgeScreen';
 import AskQuestionScreen from '../screens/AskQuestionScreen';
 import SpeakersScreen from '../screens/SpeakersScreen';
 import SpeakerDetailsScreen from '../screens/SpeakerDetailsScreen';
+import COLORS from '../styles/colors';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -44,65 +45,65 @@ const CustomDrawerContent = () => {
         onPress={() => {
           navigation.navigate('Drawer');
         }}>
-        <Feather name="home" size={20} color="#000" />
+        <Feather name="home" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Home</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.menuItem}
         onPress={() => navigation.navigate('Agenda')}>
-        <Feather name="calendar" size={20} color="#000" />
+        <Feather name="calendar" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Agenda</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.menuItem}
         onPress={() => navigation.navigate('Speakers')}>
-        <Icon name="people-outline" size={20} color="#000" />
+        <Icon name="people-outline" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Speakers</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.menuItem}
         onPress={() => navigation.navigate('Badge')}>
-        <Feather name="award" size={20} color="#000" />
+        <Feather name="award" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Badge</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.menuItem}
         onPress={() => navigation.navigate('Venue')}>
-        <Feather name="map" size={20} color="#000" />
+        <Feather name="map" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Venue</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.menuItem}
         onPress={() => navigation.navigate('BrandInnovation')}>
-        <Feather name="video" size={20} color="#000" />
+        <Feather name="video" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Brand Innovation</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.menuItem}
         onPress={() => navigation.navigate('BrandVideos')}>
-        <Feather name="image" size={20} color="#000" />
+        <Feather name="image" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Brand Videos</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.menuItem}
         onPress={() => navigation.navigate('AskQuestion')}>
-        <Octicons name="question" size={20} color="#000" />
+        <Octicons name="question" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Ask Questions</Text>
       </TouchableOpacity>
       <View style={styles.menuItem}>
-        <Feather name="bar-chart-2" size={20} color="#000" />
+        <Feather name="bar-chart-2" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Voting</Text>
       </View>
       <View style={styles.menuItem}>
-        <Feather name="send" size={20} color="#000" />
+        <Feather name="send" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Social Media</Text>
       </View>
       <View style={styles.menuItem}>
-        <Feather name="clipboard" size={20} color="#000" />
+        <Feather name="clipboard" size={20} color={COLORS.text} />
         <Text style={styles.menuText}>Survey</Text>
       </View>
       <View style={styles.menuItem}>
-        <Feather name="feather" size={20} color="#000" />
+        <Feather name="feather" size={20} color={COLORS.text}/>
         <Text style={styles.menuText}>CME</Text>
       </View>
     </View>
@@ -154,17 +155,10 @@ const styles = StyleSheet.create({
   menuContainer: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#fff',
+    backgroundColor: COLORS.white,
     borderTopRightRadius: 16,
     borderBottomRightRadius: 16,
     paddingLeft: 20,
-  },
-  menuTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 16,
-    color: '#0057B7',
-    marginTop: 24,
   },
   menuItem: {
     flexDirection: 'row',
@@ -174,7 +168,7 @@ const styles = StyleSheet.create({
   menuText: {
     marginLeft: 8,
     fontSize: 18,
-    color: '#000',
+    color: COLORS.text,
   },
 });
 
