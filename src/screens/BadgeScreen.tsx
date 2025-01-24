@@ -72,13 +72,12 @@ const styles = StyleSheet.create({
   qrCode: {
     width: '100%',
     height: '100%',
-    backgroundColor:'red'
   },
   barCodeView: {
     aspectRatio: 1,
   },
   card: {
-    backgroundColor: COLORS.cardBackground || '#fff', 
+    backgroundColor: COLORS.cardBackground, 
     borderRadius: 16,
     paddingVertical: 20,
     paddingHorizontal: 16,

@@ -83,10 +83,12 @@ const CustomDrawerContent = () => {
         <Feather name="image" size={20} color="#000" />
         <Text style={styles.menuText}>Brand Videos</Text>
       </TouchableOpacity>
-      <View style={styles.menuItem}>
+      <TouchableOpacity
+        style={styles.menuItem}
+        onPress={() => navigation.navigate('AskQuestion')}>
         <Octicons name="question" size={20} color="#000" />
         <Text style={styles.menuText}>Ask Questions</Text>
-      </View>
+      </TouchableOpacity>
       <View style={styles.menuItem}>
         <Feather name="bar-chart-2" size={20} color="#000" />
         <Text style={styles.menuText}>Voting</Text>
